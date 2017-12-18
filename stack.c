@@ -12,7 +12,7 @@ typedef struct stack STACK;
 void push()
 {
     int num;
-    if (st.boop == MAXSIZE - 1)
+    if (st.boop == MAXSIZE-1)
     {
         printf("stack is completely filled");
 
@@ -21,7 +21,7 @@ void push()
     {
         printf("enter the element:\n");
         scanf("%d", &num);
-        st.boop = st.boop + 1;
+        st.boop = st.boop+1;
         st.stc[st.boop] = num;
     }
 
@@ -38,7 +38,7 @@ int pop()
     {
         num = st.stc[st.boop];
         printf("%d", st.stc[st.boop]);
-        st.boop = st.boop - 1;
+        st.boop = st.boop-1;
     }
 return num;
 }
@@ -52,7 +52,7 @@ void display()
     }
     else
     {
-        for (i = st.boop; i >= 0; i--)
+        for (i = st.boop; i>=0; i--)
         {
             printf("%d ", st.stc[i]);
         }
