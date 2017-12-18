@@ -1,10 +1,10 @@
 #include "stdlib.h"
 #include "stdio.h"
-#define maxsize 20
+#define MAXSIZE 20
 
 struct stack
 {
-    int stc[maxsize];
+    int stc[MAXSIZE];
     int boop;
 };
 typedef struct stack STACK;
@@ -12,7 +12,7 @@ typedef struct stack STACK;
 void push()
 {
     int num;
-    if (st.boop == maxsize - 1)
+    if (st.boop == MAXSIZE - 1)
     {
         printf("stack is completely filled");
 
